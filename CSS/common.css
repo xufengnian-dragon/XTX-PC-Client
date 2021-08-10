@@ -1,0 +1,126 @@
+
+/* 快捷菜单模块 */
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+    
+}
+.xtx-shortcut {
+    height: 52px;
+    background-color: #333333;
+    
+}
+.xtx-shortcut .container {
+    height: 52px;
+    /* background-color: skyblue; */
+}
+.container ul li {
+    float: left;
+    line-height: 52px;
+    color: #666666;
+}
+.xtx-shortcut ul a {
+    margin: 0 16px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.container li:last-child a {
+    margin-right: 0;
+}
+.fr li:last-child a::before {
+    content: '';
+    width: 11px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -3px;
+    background:url(../images/sprites.png) -160px -70px;
+}
+
+/* 主导航模块 : xtx-main-nav */
+
+/* logo模块 */
+.xtx-main-nav {
+    height: 130px;
+    /* background-color: pink; */
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.xtx-main-nav .logo {
+    width: 207px;
+    height: 70px;
+    /* background-color: red; */
+    margin-left: 25px;
+}
+.xtx-main-nav .logo a {
+    display: block;
+    height: 70px;
+    background: url(../images/logo.png);
+    background-size: 100% 100%; 
+    font-size: 0;
+}
+
+/* 导航模块 */
+.xtx-main-nav nav li {
+    float: left;
+    line-height: 70px;
+    margin-right: 48px;
+}
+.xtx-main-nav nav li:first-child {
+    margin-left: 40px;
+}
+.xtx-main-nav nav a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+    padding-bottom: 7px;
+}
+
+ /* 搜索模块*/
+ .xtx-main-nav .search {
+     position: relative;
+     width: 172px;
+     height: 30px;
+     /* background-color: orange; */
+     margin-top: 24px;
+     margin-left: 34px;
+ }
+ .xtx-main-nav .search input {
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+    padding-left: 31px;
+ }
+ .xtx-main-nav .search::before {
+     content: '';
+     position: absolute;
+     width: 18px;
+     height: 18px;
+     top: 5px;
+     left: 2px;
+     background:url(../images/sprites.png) -80px -70px;
+ }
+
+ /* 购物车模块 */
+ .xtx-main-nav .cart {
+     position: relative;
+     width: 23px;
+     height: 23px;
+     margin-top: 28px;
+     margin-left: 15px;
+     background:url(../images/sprites.png) -120px -70px;
+ }
+ .xtx-main-nav .cart span {
+     position: absolute;
+     width: 20px;
+     height: 15px;
+     right: -12px;
+     top: -5px;
+     border-radius: 8px;
+     text-align: center;
+     line-height: 15px;
+     color: #fff;
+     font-size: 13px;
+     background-color: rgb(253, 115, 115);
+ }
